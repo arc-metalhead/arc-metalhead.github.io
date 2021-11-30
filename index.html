@@ -1,2 +1,37 @@
-hi
-in preogress
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metalhead</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="centered">
+            <h2>Metalhead</h2>
+            <h3>$149.99</h3>
+            
+            <br>
+            
+            <input type="submit" onclick="document.getElementById('preorder-box').scrollIntoView()" value="Pre-order Now">
+        </div>
+        
+        <br><br><br><br>
+        
+        <div id="preorder-box" class="centered">
+            <form method="post">
+                <label>Preorder Today</label><br>
+                <input placeholder="Name" name="name" required><br><br>
+                <input placeholder="Email" type="email" name="email" required><br><br>
+                <input placeholder="Phone Number" type="tel" name="phone"><br><br><br>
+                
+                <input placeholder="Card Number" type="tel" pattern="\d*" maxlength="19" name="card-number" required><br><br>
+                <input placeholder="Expiration Date" type="tel" pattern="\d*" maxlength="7" name="expiration-date" required><br><br>
+                <input placeholder="CVC" type="tel" pattern="\d*" maxlength="4" name="cvc" required><br><br>
+                
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

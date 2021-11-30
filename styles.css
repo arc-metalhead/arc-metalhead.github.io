@@ -1,0 +1,152 @@
+body{
+    background-color: #282828;
+    font-family: consolasForAll;
+    color: #ddd;
+}
+
+@font-face 
+{
+  font-family: consolasForAll;
+  src: url(/consolas.ttf);
+}
+
+h3
+{
+    margin: 1em;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #666;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-track {
+  margin: 5px;
+  padding: 5px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  border-radius: 8px;
+  border: 3px solid #282828;
+}
+
+a{
+    color: #f39c12;
+}
+
+.fa, .fab {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 90%;
+  background: black;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+header 
+{
+    position: relative;
+    top: -25px;
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    display: table;
+
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+}
+
+header h1
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#projects .project
+{
+    width: 23%;
+    margin: 1%;
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+#projects .project img
+{
+    width: 100%;
+    position: relative;
+    border-radius: 25px;
+}
+
+#projects .project #title
+{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -10%);
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#projects .project #desc
+{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 30%);
+    color: #eee;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#project img
+{
+    width: 100%;
+}
+
+#project
+{
+    width: 33%;
+}
+
+input, select, textarea, button
+{
+  background-color: #141414;
+  color: #eeeeee;
+  font-family: Consolas;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #353535;
+  text-decoration: none;
+}
+
+.centered
+{
+    text-align: center;
+}
